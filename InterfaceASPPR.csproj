@@ -1,0 +1,488 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B8B9B18E-241B-44C2-AFD6-7938A1CA351B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InterfaceASPPR</RootNamespace>
+    <AssemblyName>InterfaceASPPR</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Devart.Data, Version=5.0.818.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL" />
+    <Reference Include="Devart.Data.Oracle, Version=8.1.26.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessUser\AccessUser.cs" />
+    <Compile Include="Algorithms\CalculationFunctions.cs" />
+    <Compile Include="Algorithms\SimpleFunctions.cs" />
+    <Compile Include="Dictionary\Dictionary.cs" />
+    <Compile Include="Excel\ExcelClass.cs" />
+    <Compile Include="Excel\ExcelGrid.cs" />
+    <Compile Include="File&amp;Folder\FileWorks.cs" />
+    <Compile Include="File&amp;Folder\FolderWorks.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\DistanceExpert4ValueMatDet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\DistanceExpert4ValueMatDet.Designer.cs">
+      <DependentUpon>DistanceExpert4ValueMatDet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\DistanceExpert4ValuePDK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\DistanceExpert4ValuePDK.Designer.cs">
+      <DependentUpon>DistanceExpert4ValuePDK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\DistanceExpert5ValueObor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\DistanceExpert5ValueObor.Designer.cs">
+      <DependentUpon>DistanceExpert5ValueObor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\DistanceExpert5ValueVidDetal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\DistanceExpert5ValueVidDetal.Designer.cs">
+      <DependentUpon>DistanceExpert5ValueVidDetal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\MatDet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\MatDet.Designer.cs">
+      <DependentUpon>MatDet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\Oborud.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\Oborud.Designer.cs">
+      <DependentUpon>Oborud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\PovDK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\PovDK.Designer.cs">
+      <DependentUpon>PovDK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\ShBasir.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\ShBasir.Designer.cs">
+      <DependentUpon>ShBasir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\TochnObrab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\TochnObrab.Designer.cs">
+      <DependentUpon>TochnObrab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\VidDetal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\VidDetal.Designer.cs">
+      <DependentUpon>VidDetal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\DistanceExpert5ValueGabDet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\DistanceExpert5ValueGabDet.Designer.cs">
+      <DependentUpon>DistanceExpert5ValueGabDet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\GabDet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\GabDet.Designer.cs">
+      <DependentUpon>GabDet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\VidDet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\VidDet.Designer.cs">
+      <DependentUpon>VidDet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\DistanceExpert3ValueShBasir.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\DistanceExpert3ValueShBasir.Designer.cs">
+      <DependentUpon>DistanceExpert3ValueShBasir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\DistanceExpert5ValueTochObr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\DistanceExpert5ValueTochObr.Designer.cs">
+      <DependentUpon>DistanceExpert5ValueTochObr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\DistanceExpert5ValueVTO.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\DistanceExpert5ValueVTO.Designer.cs">
+      <DependentUpon>DistanceExpert5ValueVTO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\Obor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\Obor.Designer.cs">
+      <DependentUpon>Obor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\VidTehnOb.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\Expert\VidTehnOb.Designer.cs">
+      <DependentUpon>VidTehnOb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\SelNSPorUSP\GenPageSel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\SelNSPorUSP\GenPageSel.Designer.cs">
+      <DependentUpon>GenPageSel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\SelNSPorUSP\IzgotNSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\SelNSPorUSP\IzgotNSP.Designer.cs">
+      <DependentUpon>IzgotNSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\SelNSPorUSP\IzgotUSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\SelNSPorUSP\IzgotUSP.Designer.cs">
+      <DependentUpon>IzgotUSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\SelNSPorUSP\ProektNSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\SelNSPorUSP\ProektNSP.Designer.cs">
+      <DependentUpon>ProektNSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\SelNSPorUSP\ProektUSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\SelNSPorUSP\ProektUSP.Designer.cs">
+      <DependentUpon>ProektUSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\Svertka\SvRand.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\Svertka\SvRand.Designer.cs">
+      <DependentUpon>SvRand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\Svertka\SvId.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\Svertka\SvId.Designer.cs">
+      <DependentUpon>SvId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\Svertka\SvMult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\Svertka\SvMult.Designer.cs">
+      <DependentUpon>SvMult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\Svertka\Nogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\Svertka\Nogin.Designer.cs">
+      <DependentUpon>Nogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\Svertka\Saaty.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\Svertka\Saaty.Designer.cs">
+      <DependentUpon>Saaty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\Svertka\SaatyKriteri.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\Svertka\SaatyKriteri.Designer.cs">
+      <DependentUpon>SaatyKriteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Econom\Svertka\SvLin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Froms\Econom\Svertka\SvLin.Designer.cs">
+      <DependentUpon>SvLin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceSettings.cs" />
+    <Compile Include="LOG\Log.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\Expert\DistanceExpert4ValueMatDet.resx">
+      <DependentUpon>DistanceExpert4ValueMatDet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\Expert\DistanceExpert4ValuePDK.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DistanceExpert4ValuePDK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\Expert\DistanceExpert5ValueObor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DistanceExpert5ValueObor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\Expert\DistanceExpert5ValueVidDetal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DistanceExpert5ValueVidDetal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\Expert\MatDet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MatDet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\Expert\Oborud.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Oborud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\Expert\PovDK.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PovDK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\Expert\ShBasir.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ShBasir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\Expert\TochnObrab.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TochnObrab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\Expert\VidDetal.resx">
+      <DependentUpon>VidDetal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\Expert\DistanceExpert5ValueGabDet.resx">
+      <DependentUpon>DistanceExpert5ValueGabDet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\Expert\GabDet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GabDet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\Expert\VidDet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VidDet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\Expert\DistanceExpert3ValueShBasir.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DistanceExpert3ValueShBasir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\Expert\DistanceExpert5ValueTochObr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DistanceExpert5ValueTochObr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\Expert\DistanceExpert5ValueVTO.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DistanceExpert5ValueVTO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\Expert\Obor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Obor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\Expert\VidTehnOb.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VidTehnOb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\SelNSPorUSP\GenPageSel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GenPageSel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\SelNSPorUSP\IzgotNSP.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IzgotNSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\SelNSPorUSP\IzgotUSP.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IzgotUSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\SelNSPorUSP\ProektNSP.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProektNSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\SelNSPorUSP\ProektUSP.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProektUSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\Svertka\SvRand.resx">
+      <DependentUpon>SvRand.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\Svertka\SvId.resx">
+      <DependentUpon>SvId.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\Svertka\SvMult.resx">
+      <DependentUpon>SvMult.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\Svertka\Nogin.resx">
+      <DependentUpon>Nogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\Svertka\Saaty.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Saaty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\Svertka\SaatyKriteri.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SaatyKriteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Econom\Svertka\SvLin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SvLin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="licenses.licx" />
+    <EmbeddedResource Include="licenses.licx" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Prop\PathToFile.cs" />
+    <Compile Include="SQL\SQL Delete.cs" />
+    <Compile Include="SQL\SQL BLOB.cs" />
+    <Compile Include="SQL\SQL Exist.cs" />
+    <Compile Include="SQL\SQL Init.cs" />
+    <Compile Include="SQL\SQL Insert.cs" />
+    <Compile Include="SQL\SQL Select.cs" />
+    <Compile Include="SQL\SQL Update.cs" />
+    <Compile Include="Translit\DoTranslit.cs" />
+    <Compile Include="Word\Word.cs" />
+    <Compile Include="WorkWithForms\TableLayoutPanelWork.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="_Kron-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="_Kron-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="_sb_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="I1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="U1-.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="u1---.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="U2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="R2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="I_L.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="I_B.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="I_H.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

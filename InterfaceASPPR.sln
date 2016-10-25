@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceASPPR", "InterfaceASPPR.csproj", "{B8B9B18E-241B-44C2-AFD6-7938A1CA351B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8B9B18E-241B-44C2-AFD6-7938A1CA351B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8B9B18E-241B-44C2-AFD6-7938A1CA351B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8B9B18E-241B-44C2-AFD6-7938A1CA351B}.Debug|x86.ActiveCfg = Debug|x86
+		{B8B9B18E-241B-44C2-AFD6-7938A1CA351B}.Debug|x86.Build.0 = Debug|x86
+		{B8B9B18E-241B-44C2-AFD6-7938A1CA351B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8B9B18E-241B-44C2-AFD6-7938A1CA351B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8B9B18E-241B-44C2-AFD6-7938A1CA351B}.Release|x86.ActiveCfg = Release|x86
+		{B8B9B18E-241B-44C2-AFD6-7938A1CA351B}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
